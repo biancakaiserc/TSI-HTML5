@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<title>HTML News</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/menu.css">
+	<link rel="stylesheet" href="styles/layout2.css" type="text/css">
+	<link rel="stylesheet" href="styles/style.css" type="text/css">
+	<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header id="menu">
+			<nav class="nav">
+				<div id="banner">
+					<img src="images/logo2.png" alt="Html News logo">
+				</div>
+				<div class="searchBar">
+					<input class="input" type="text" placeholder="Search" id="primarySearch" name="query" value="" autocomplete="off">
+					<button type="submit" class="searchButton fa fa-search" value="Search"></button>
+				</div>
+				<div id='cssmenu' class='align-right'>
+					<ul>
+						<li class='has-sub'><a href='#'><span>Contato</span></a>
+							<ul>
+								<li class='last'><a href='contato1.html'><span>Formulario</span></a></li>
+							</ul>
+						</li>
+						<li class='has-sub'><a href='#esporte'><span>Esporte</span></a>
+							<ul>
+								<li class='has-sub'><a href='#'><span>Futebol</span></a>
+									<ul>
+										<li><a href='#'><span>UEFA</span></a></li>
+										<li><a href='#'><span>Paulista</span></a></li>
+										<li class='last'><a href='#'><span>Libertadores</span></a></li>
+									</ul>
+								</li>
+								<li class='has-sub'><a href='#'><span>Olimpiadas</span></a></li>
+								<li class='last'><a href='#'><span>Vôlei</span></a></li>
+							</ul>
+						</li>
+						<li class='has-sub'><a href='#cultura'><span>Cultura</span></a>
+							<ul>
+								<li><a href='#'><span>Música</span></a></li>
+								<li><a href='#'><span>Shows</span></a></li>
+								<li class='last'><a href='#'><span>Teatro</span></a></li>
+							</ul>
+						</li>
+						<li class='has-sub'><a href='#mercado'><span>Mercado</span></a>
+							<ul>
+								<li class='last'><a href='#'><span>Economia</span></a></li>
+							</ul>
+						</li>
+						<li><a href='#cotidiano'><span>Cotidiano</span></a></li>
+						<li><a href='#politica'><span>Politica</span></a></li>
+						<li class='last'><a href='/media/kaiser/KAISERD/HTML5/Aula2/index.html'><span>Home</span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+	</div>
+	<!-- content -->
+	<div class="content">
+		<div class="homepage">
+	      	<form>
+		        <div class="row">
+		            <h4>Dados pessoais</h4>
+		            <div class="input-group input-group-icon">
+		                <input class="input" type="text" placeholder="Nome completo"  autofocus required/>
+		                <div class="input-icon"><i class="fa fa-user"></i></div>
+		            </div>
+		            <div class="input-group input-group-icon">
+		                <input class="input" type="email" placeholder="E-mail" required/>
+		                <div class="input-icon"><i class="fa fa-envelope"></i></div>
+		            </div>
+		            <div class="col-half">
+			            <div class="input-group input-group-icon">
+			                <input class="input tooltip" type="password" placeholder="Senha" autocomplete="off" required/>
+			                <div class="input-icon"><i class="fa fa-key"></i></div>
+			                <span class="tooltiptext">A senha deve ter no minimo 8 caracteres</span>
+			            </div>
+		            </div>
+		            <div class="col-half">
+			            <div class="input-group input-group-icon">
+			                <input class="input" type="password" placeholder="Repita a Senha" autocomplete="off" required/>
+			                <div class="input-icon"><i class="fa fa-key"></i></div>
+			            </div>
+		            </div>
+		        </div>
+		        <div class="row">
+		        	<h4>Website</h4>
+	                <div class="input-group input-group-icon">
+	                	<input class="cal input" type="url" placeholder="www.exemplo.com" required>
+	                	<div class="input-icon"><i class="fa fa-globe"></i></div>
+	                </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-half">
+		                <h4>Data de nascimento</h4>
+		                <div class="input-group input-group-icon">
+		                	<input class="date cal input" type="date" required>
+		                	<div class="input-icon"><i class="fa fa-calendar"></i></div>
+		                </div>
+		          </div>
+		          <div class="col-half">
+		            <h4>Sexo</h4>
+		            <div class="input-group input-group-icon">
+		              <select class="input">
+		                    <option selected="">Selecione uma opção</option>
+		                    <option value="male">Masculino</option>
+		                    <option value="female">Feminino</option>
+		                </select>
+		            	<div class="input-icon"><i class="fa fa-venus-mars"></i></div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-half">
+		                <h4>CPF</h4>
+		                <div class="input-group input-group-icon">
+		                    <input class="input" type="text" placeholder="000.000.000-00"/>
+		                    <div class="input-icon"><i class="fa fa-credit-card"></i></div>
+		                </div>
+		            </div>
+		          <div class="col-half">
+		            <h4>Estado</h4>
+		            <div class="input-group input-group-icon">
+						<select class="input" id="state">
+							<option selected="">Selecione uma opção</option>
+						    <option value="Alagoas">Alagoas</option>
+							<option value="Amapá">Amapá</option>
+							<option value="Amazonas">Amazonas</option>
+							<option value="Bahia">Bahia</option>
+							<option value="Ceará">Ceará</option>
+							<option value="Distrito Federal">Distrito Federal</option>
+							<option value="Espírito Santo">Espírito Santo</option>
+							<option value="Goiás">Goiás</option>
+							<option value="Maranhão">Maranhão</option>
+							<option value="Mato Grosso">Mato Grosso</option>
+							<option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+							<option value="Minas Gerais">Minas Gerais</option>
+							<option value="Pará">Pará</option>
+							<option value="Paraíba">Paraíba</option>
+							<option value="Paraná">Paraná</option>
+							<option value="Pernambuco">Pernambuco</option>
+							<option value="Piauí">Piauí</option>
+							<option value="Rio de Janeiro">Rio de Janeiro</option>
+							<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+							<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+							<option value="Rondônia">Rondônia</option>
+							<option value="Roraima">Roraima</option>
+							<option value="Santa Catarina">Santa Catarina</option>
+							<option value="São Paulo">São Paulo</option>
+							<option value="Sergipe">Sergipe</option>
+							<option value="Tocantins">Tocantins</option>
+						</select>
+		                <div class="input-icon"><i class="fa fa-map-marker"></i></div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="row">
+		        	<div class="col-half">
+			            <h4>Telefone</h4>
+			            <div class="input-group input-group-icon">
+			              <input class="input" type="text" placeholder="(00) 0000-0000"/>
+			              <div class="input-icon"><i class="fa fa-phone"></i></div>
+			            </div>
+		            </div>
+		            <div class="col-half">
+		            	<h4>Celular</h4>
+			            <div class="input-group input-group-icon">
+			              <input class="input" type="text" placeholder="(00) 00000-0000"/>
+			              <div class="input-icon"><i class="fa fa-mobile"></i></div>
+			            </div>
+		            </div>
+		        </div>
+		        <div class="row">
+			        <div id="paginator">
+				        <progress value="1" max="3"></progress>
+				        <p>Página 1/3</p>
+				        <a href="contato2.html" id="forward" class="input-icon"><i class="fa fa-angle-right"></i></a>
+				    </div>
+		        </div>
+	      	</form>
+	    </div>
+    </div>
+	<!-- / content body -->
+
+	<!-- Footer -->
+	<footer id="footer">
+		<p>Copyright &copy; 2012 - All Rights Reserved - <a href="#">Domain Name</a></p>
+	</footer>
+</body>
+</html>
