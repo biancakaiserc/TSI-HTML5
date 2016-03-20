@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="styles/menu.css">
 	<link rel="stylesheet" href="styles/layout2.css" type="text/css">
 	<link rel="stylesheet" href="styles/style.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -53,7 +54,7 @@
 						</li>
 						<li><a href='#cotidiano'><span>Cotidiano</span></a></li>
 						<li><a href='#politica'><span>Politica</span></a></li>
-						<li class='last'><a href='/media/kaiser/KAISERD/HTML5/Aula2/index.html'><span>Home</span></a></li>
+						<li class='last'><a href='index.html'><span>Home</span></a></li>
 					</ul>
 				</div>
 			</nav>
@@ -62,27 +63,27 @@
 	<!-- content -->
 	<div class="content">
 		<div class="homepage">
-	      	<form>
+	      	<form action="contato2.html" method="post">
 		        <div class="row">
 		            <h4>Dados pessoais</h4>
 		            <div class="input-group input-group-icon">
-		                <input class="input" type="text" placeholder="Nome completo"  autofocus required/>
+		                <input class="input" id="nome" type="text" placeholder="Nome completo" autofocus/>
 		                <div class="input-icon"><i class="fa fa-user"></i></div>
 		            </div>
 		            <div class="input-group input-group-icon">
-		                <input class="input" type="email" placeholder="E-mail" required/>
+		                <input class="input" type="email" id="email" placeholder="E-mail"/>
 		                <div class="input-icon"><i class="fa fa-envelope"></i></div>
 		            </div>
 		            <div class="col-half">
 			            <div class="input-group input-group-icon">
-			                <input class="input tooltip" type="password" placeholder="Senha" autocomplete="off" required/>
+			                <input id="senha" class="input tooltip" type="password" placeholder="Senha" autocomplete="off" pattern=".{8,}"/>
 			                <div class="input-icon"><i class="fa fa-key"></i></div>
 			                <span class="tooltiptext">A senha deve ter no minimo 8 caracteres</span>
 			            </div>
 		            </div>
 		            <div class="col-half">
 			            <div class="input-group input-group-icon">
-			                <input class="input" type="password" placeholder="Repita a Senha" autocomplete="off" required/>
+			                <input id="repita" class="input" type="password" placeholder="Repita a Senha" autocomplete="off"/>
 			                <div class="input-icon"><i class="fa fa-key"></i></div>
 			            </div>
 		            </div>
@@ -90,22 +91,32 @@
 		        <div class="row">
 		        	<h4>Website</h4>
 	                <div class="input-group input-group-icon">
-	                	<input class="cal input" type="url" placeholder="www.exemplo.com" required>
+	                	<input id="site" class="cal input" type="url" placeholder="www.exemplo.com">
 	                	<div class="input-icon"><i class="fa fa-globe"></i></div>
 	                </div>
+		        </div>
+		        <div class="row">
+		        	<details>
+						<summary>Resposta opcional:</summary>
+						<h4>Facebook</h4>
+		                <div class="input-group input-group-icon">
+		                	<input class="cal input" type="url" placeholder="www.facebook.com/User">
+		                	<div class="input-icon"><i class="fa fa-facebook"></i></div>
+		                </div>
+					</details>
 		        </div>
 		        <div class="row">
 		            <div class="col-half">
 		                <h4>Data de nascimento</h4>
 		                <div class="input-group input-group-icon">
-		                	<input class="date cal input" type="date" required>
+		                	<input id="nasc" class="date cal input" type="date">
 		                	<div class="input-icon"><i class="fa fa-calendar"></i></div>
 		                </div>
 		          </div>
 		          <div class="col-half">
 		            <h4>Sexo</h4>
 		            <div class="input-group input-group-icon">
-		              <select class="input">
+		              <select id="sexo" class="input">
 		                    <option selected="">Selecione uma opção</option>
 		                    <option value="male">Masculino</option>
 		                    <option value="female">Feminino</option>
@@ -118,14 +129,14 @@
 		            <div class="col-half">
 		                <h4>CPF</h4>
 		                <div class="input-group input-group-icon">
-		                    <input class="input" type="text" placeholder="000.000.000-00"/>
+		                    <input id="cpf" class="input" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF no formato: xxx.xxx.xxx-xx" placeholder="000.000.000-00"/>
 		                    <div class="input-icon"><i class="fa fa-credit-card"></i></div>
 		                </div>
 		            </div>
 		          <div class="col-half">
 		            <h4>Estado</h4>
 		            <div class="input-group input-group-icon">
-						<select class="input" id="state">
+						<select id="state" class="input" id="state">
 							<option selected="">Selecione uma opção</option>
 						    <option value="Alagoas">Alagoas</option>
 							<option value="Amapá">Amapá</option>
@@ -162,14 +173,14 @@
 		        	<div class="col-half">
 			            <h4>Telefone</h4>
 			            <div class="input-group input-group-icon">
-			              <input class="input" type="text" placeholder="(00) 0000-0000"/>
+			              <input id="tel" class="input" type="tel" placeholder="(00) 0000-0000"/>
 			              <div class="input-icon"><i class="fa fa-phone"></i></div>
 			            </div>
 		            </div>
 		            <div class="col-half">
 		            	<h4>Celular</h4>
 			            <div class="input-group input-group-icon">
-			              <input class="input" type="text" placeholder="(00) 00000-0000"/>
+			              <input id="cel" class="input" type="tel" placeholder="(00) 00000-0000"/>
 			              <div class="input-icon"><i class="fa fa-mobile"></i></div>
 			            </div>
 		            </div>
@@ -178,9 +189,9 @@
 			        <div id="paginator">
 				        <progress value="1" max="3"></progress>
 				        <p>Página 1/3</p>
-				        <a href="contato2.html" id="forward" class="input-icon"><i class="fa fa-angle-right"></i></a>
 				    </div>
 		        </div>
+		    	<button type="submit" id="submit">Próximo</button>
 	      	</form>
 	    </div>
     </div>

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="styles/menu.css">
 	<link rel="stylesheet" href="styles/layout2.css" type="text/css">
 	<link rel="stylesheet" href="styles/style.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -53,7 +54,7 @@
 						</li>
 						<li><a href='#cotidiano'><span>Cotidiano</span></a></li>
 						<li><a href='#politica'><span>Politica</span></a></li>
-						<li class='last'><a href='/media/kaiser/KAISERD/HTML5/Aula2/index.html'><span>Home</span></a></li>
+						<li class='last'><a href='index.html'><span>Home</span></a></li>
 					</ul>
 				</div>
 			</nav>
@@ -62,12 +63,12 @@
 	<!-- content -->
 	<div class="content">
 		<div class="homepage">
-	      	<form>
+	      	<form action="contato3.html" method="post">
 		        <div class="row">
 		            <div class="col-half">
 		            <h4>Qual seu sistema operacional?</h4>
 			            <div class="input-group input-group-icon">
-			                <input class="input" type="text" name="operation" list="operational" placeholder="DIgite um sistema">
+			                <input class="input" type="text" name="operation" list="operational" placeholder="Digite um sistema">
 			                <div class="input-icon"><i class="fa fa-code"></i></div>
 							<datalist id="operational">
 								<option value="AIX">
@@ -143,7 +144,7 @@
 		          	<div class="col-half">
 		            <h4>Qual seu navegador preferido?</h4>
 			            <div class="input-group input-group-icon">
-			                <input class="input" type="text" name="browsers" list="browsers" placeholder="DIgite um navegador">
+			                <input class="input" type="text" name="browsers" list="browsers" placeholder="Digite um navegador">
 			                <div class="input-icon"><i class="fa fa-code"></i></div>
 							<datalist id="browsers">
 								<option value="Internet Explorer">
@@ -160,7 +161,7 @@
 		            <div class="col-half">
 		            <h4>Qual sua linguagem preferida?</h4>
 			            <div class="input-group input-group-icon">
-			                <input class="input" type="text" name="programing" list="programing" placeholder="DIgite uma linguagem">
+			                <input class="input" type="text" name="programing" list="programing" placeholder="Digite uma linguagem">
 			                <div class="input-icon"><i class="fa fa-code"></i></div>
 							<datalist id="programing">
 								<option value="4th Dimension/4D">
@@ -496,13 +497,108 @@
 		          	</fieldset>
 		        </div>
 		        <div class="row">
+		        	<fieldset class="field">
+						<legend>Quais eletronicos você possuí?</legend>
+				        <div class="col-half">
+				            <div class="input-group">
+				              	<div class="check">
+								    <input class="input" value="Smartphone" type="checkbox" id="Smartphone"/>
+								    <label for="Smartphone">
+								      <div><i class="fa fa-check"></i></div> Smartphone
+								    </label>
+								</div>
+								<div class="check">
+								    <input class="input" value="PC" type="checkbox" id="PC"/>
+								    <label for="PC">
+								      <div><i class="fa fa-check"></i></div> PC (Desktop)
+								    </label>
+								</div>
+								<div class="check">
+								    <input class="input" value="Notebook" type="checkbox" id="Notebook"/>
+								    <label for="Notebook">
+								      <div><i class="fa fa-check"></i></div> Notebook
+								    </label>
+								</div>
+							</div>
+						</div>
+						<div class="col-half">
+				            <div class="input-group">
+				              	<div class="check">
+								    <input class="input" value="Tablet" type="checkbox" id="Tablet"/>
+								    <label for="Tablet">
+								      <div><i class="fa fa-check"></i></div> Tablet
+								    </label>
+								</div>
+								<div class="check">
+								    <input class="input" value="Kindle" type="checkbox" id="Kindle"/>
+								    <label for="Kindle">
+								      <div><i class="fa fa-check"></i></div> Kindle (Leitor)
+								    </label>
+								</div>
+								<div class="check">
+								    <input class="input" value="Game" type="checkbox" id="Game"/>
+								    <label for="Game">
+								      <div><i class="fa fa-check"></i></div> Game portátil
+								    </label>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="field">
+						<legend>Qual você mais utiliza?</legend>
+						<div class="col-half">
+				            <div class="input-group">
+				              	<div class="check radio">
+								    <input class="input" value="Smartphone" type="radio" name="eletronic" id="Smartphone2"/>
+								    <label for="Smartphone2">
+								      <div><i class="fa fa-times"></i></div> Smartphone
+								    </label>
+								</div>
+								<div class="check radio">
+								    <input class="input" value="PC" type="radio" name="eletronic" id="PC2"/>
+								    <label for="PC2">
+								      <div><i class="fa fa-times"></i></div> PC (Desktop)
+								    </label>
+								</div>
+								<div class="check radio">
+								    <input class="input" value="Notebook" type="radio" name="eletronic" id="Notebook2"/>
+								    <label for="Notebook2">
+								      <div><i class="fa fa-times"></i></div> Notebook
+								    </label>
+								</div>
+							</div>
+						</div>
+						<div class="col-half">
+				            <div class="input-group">
+				              	<div class="check radio">
+								    <input class="input" value="Tablet" type="radio" name="eletronic" id="Tablet2"/>
+								    <label for="Tablet2">
+								      <div><i class="fa fa-times"></i></div> Tablet
+								    </label>
+								</div>
+								<div class="check radio">
+								    <input class="input" value="Kindle" type="radio" name="eletronic" id="Kindle2"/>
+								    <label for="Kindle2">
+								      <div><i class="fa fa-times"></i></div> Kindle (Leitor)
+								    </label>
+								</div>
+								<div class="check radio">
+								    <input class="input" value="Game" type="radio" name="eletronic" id="Game2"/>
+								    <label for="Game2">
+								      <div><i class="fa fa-times"></i></div> Game portátil
+								    </label>
+								</div>
+							</div>
+						</div>
+		            </fieldset>
+		        </div>
+		        <div class="row">
 			        <div id="paginator">
 				        <progress value="2" max="3"></progress>
-				        <a href="contato1.html" id="back" class="input-icon"><i class="fa fa-angle-left"></i></a>
 				        <p>Página 2/3</p>
-				        <a href="contato3.html" id="forward" class="input-icon"><i class="fa fa-angle-right"></i></a>
 				    </div>
 		        </div>
+		    	<button id="submit">Próximo</button>
 	      	</form>
 	    </div>
     </div>

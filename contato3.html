@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="styles/menu.css">
 	<link rel="stylesheet" href="styles/layout2.css" type="text/css">
 	<link rel="stylesheet" href="styles/style.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
 </head>
 <body>
@@ -53,7 +54,7 @@
 						</li>
 						<li><a href='#cotidiano'><span>Cotidiano</span></a></li>
 						<li><a href='#politica'><span>Politica</span></a></li>
-						<li class='last'><a href='/media/kaiser/KAISERD/HTML5/Aula2/index.html'><span>Home</span></a></li>
+						<li class='last'><a href='index.html'><span>Home</span></a></li>
 					</ul>
 				</div>
 			</nav>
@@ -62,115 +63,32 @@
 	<!-- content -->
 	<div class="content">
 		<div class="homepage">
-	      	<form>
+	      	<form method="get">
 		        <div class="row">
-		            <h4>Dados pessoais</h4>
+		            <h4>Qual sua opinião sobre a qualidade dos sistemas operacionais atualmente?</h4>
 		            <div class="input-group input-group-icon">
-		                <input class="input" type="text" placeholder="Nome completo"  autofocus required/>
-		                <div class="input-icon"><i class="fa fa-user"></i></div>
+		              <textarea rows="4" cols="50" class="input" placeholder="Faça seu comentario..."  autofocus></textarea>
 		            </div>
+	            	<h4>Qual sua opinião sobre os serviços de midias sociais?</h4>
 		            <div class="input-group input-group-icon">
-		                <input class="input" type="email" placeholder="E-mail" required/>
-		                <div class="input-icon"><i class="fa fa-envelope"></i></div>
+		              <textarea rows="4" cols="50" class="input" placeholder="Faça seu comentario..."  autofocus></textarea>
 		            </div>
-		            <div class="col-half">
-			            <div class="input-group input-group-icon">
-			                <input class="input" type="password" placeholder="Senha" required/>
-			                <div class="input-icon"><i class="fa fa-key"></i></div>
-			            </div>
-			            <p>A senha deve conter no mínimo 8 caracteres</p>
-		            </div>
-		        </div>
-		        <div class="row">
-		            <div class="col-half">
-		                <h4>Data de nascimento</h4>
-		                <div class="input-group input-group-icon">
-		                	<input class="date cal input" type="date" required>
-		                	<div class="input-icon"><i class="fa fa-calendar"></i></div>
-		                </div>
-		          </div>
-		          <div class="col-half">
-		            <h4>Sexo</h4>
+		            <h4>Duvidas</h4>
 		            <div class="input-group input-group-icon">
-		              <select class="input">
-		                    <option selected="">Selecione uma opção</option>
-		                    <option value="male">Masculino</option>
-		                    <option value="female">Feminino</option>
-		                </select>
-		            	<div class="input-icon"><i class="fa fa-venus-mars"></i></div>
+		              <textarea rows="4" cols="50" class="input" placeholder="Faça seu comentario..."  autofocus></textarea>
 		            </div>
-		          </div>
-		        </div>
-		        <div class="row">
-		            <div class="col-half">
-		                <h4>CPF</h4>
-		                <div class="input-group input-group-icon">
-		                    <input class="input" type="text" placeholder="000.000.000-00"/>
-		                    <div class="input-icon"><i class="fa fa-credit-card"></i></div>
-		                </div>
-		            </div>
-		          <div class="col-half">
-		            <h4>Estado</h4>
+	            	<h4>Sugestões</h4>
 		            <div class="input-group input-group-icon">
-		                <input class="input" type="text" name="state" list="state" placeholder="Digite o nome do estado">
-		                <div class="input-icon"><i class="fa fa-map-marker"></i></div>
-						<datalist id="state">
-						    <option value="Alagoas">
-							<option value="Amapá">
-							<option value="Amazonas">
-							<option value="Bahia">
-							<option value="Ceará">
-							<option value="Distrito Federal">
-							<option value="Espírito Santo">
-							<option value="Goiás">
-							<option value="Maranhão">
-							<option value="Mato Grosso">
-							<option value="Mato Grosso do Sul">
-							<option value="Minas Gerais">
-							<option value="Pará">
-							<option value="Paraíba">
-							<option value="Paraná">
-							<option value="Pernambuco">
-							<option value="Piauí">
-							<option value="Rio de Janeiro">
-							<option value="Rio Grande do Norte">
-							<option value="Rio Grande do Sul">
-							<option value="Rondônia">
-							<option value="Roraima">
-							<option value="Santa Catarina">
-							<option value="São Paulo">
-							<option value="Sergipe">
-							<option value="Tocantins">
-						</datalist>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="row">
-		        	<div class="col-half">
-			            <h4>Telefone</h4>
-			            <div class="input-group input-group-icon">
-			              <input class="input" type="text" placeholder="(00) 0000-0000"/>
-			              <div class="input-icon"><i class="fa fa-phone"></i></div>
-			            </div>
-		            </div>
-		            <div class="col-half">
-		            	<h4>Celular</h4>
-			            <div class="input-group input-group-icon">
-			              <input class="input" type="text" placeholder="(00) 00000-0000"/>
-			              <div class="input-icon"><i class="fa fa-mobile"></i></div>
-			            </div>
+		              <textarea rows="4" cols="50" class="input" placeholder="Faça seu comentario..."  autofocus></textarea>
 		            </div>
 		        </div>
 		        <div class="row">
 			        <div id="paginator">
 				        <progress value="3" max="3"></progress>
-				        <a href="contato2.html" id="back" class="input-icon"><i class="fa fa-angle-left"></i></a>
 				        <p>Página 3/3</p>
 				    </div>
 		        </div>
-		        <div class="row">
-			    	<button id="submit">Enviar</button>
-		        </div>
+		    	<button id="submit">Enviar</button>
 	      	</form>
 	    </div>
     </div>
