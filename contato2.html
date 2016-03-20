@@ -426,7 +426,7 @@
 		        	<div class="col-half">
 			            <h4>Qual sua cor preferida?</h4>
 			            <div class="input-group input-group-icon">
-			              <input class="input" type="color" id="color3" value="#C4170C" list/>
+			              <input class="input" type="color" name="color" id="color" value="#C4170C" list/>
 			              <div class="input-icon"><i class="fa fa-eyedropper"></i></div>
 			            </div>
 		            </div>
@@ -437,7 +437,7 @@
 		            	<div class="row">
 			            	<h4>Facebook</h4>
 				            <div class="input-group" id="range">
-			                  	<input type="range" value="0" min="0" max="100" list="number" />
+			                  	<input type="range" name="facebook" value="0" min="0" max="100" list="number" />
 								<datalist id="number">
 								  <select>
 								    <option>0</option> 
@@ -452,7 +452,7 @@
 		            	<div class="row">
 			            	<h4>Twitter</h4>
 				            <div class="input-group" id="range">
-			                  	<input type="range" value="0" min="0" max="100" list="number" />
+			                  	<input type="range" name="twitter" value="0" min="0" max="100" list="number" />
 								<datalist id="number">
 								  <select>
 								    <option>0</option> 
@@ -467,7 +467,7 @@
 		            	<div class="row">
 			            	<h4>Instagram</h4>
 				            <div class="input-group" id="range">
-			                  	<input type="range" value="0" min="0" max="100" list="number" />
+			                  	<input type="range" name="instagram" value="0" min="0" max="100" list="number" />
 								<datalist id="number">
 								  <select>
 								    <option>0</option> 
@@ -482,7 +482,7 @@
 		            	<div class="row">
 			            	<h4>WhatsApp</h4>
 				            <div class="input-group" id="range">
-			                  	<input type="range" value="0" min="0" max="100" list="number" />
+			                  	<input type="range" name="whatsapp" value="0" min="0" max="100" list="number" />
 								<datalist id="number">
 								  <select>
 								    <option>0</option> 
@@ -502,19 +502,19 @@
 				        <div class="col-half">
 				            <div class="input-group">
 				              	<div class="check">
-								    <input class="input" value="Smartphone" type="checkbox" id="Smartphone"/>
+								    <input class="input" value="Smartphone" name="Smartphone+" type="checkbox" id="Smartphone"/>
 								    <label for="Smartphone">
 								      <div><i class="fa fa-check"></i></div> Smartphone
 								    </label>
 								</div>
 								<div class="check">
-								    <input class="input" value="PC" type="checkbox" id="PC"/>
+								    <input class="input" value="PC" name="PC+" type="checkbox" id="PC"/>
 								    <label for="PC">
 								      <div><i class="fa fa-check"></i></div> PC (Desktop)
 								    </label>
 								</div>
 								<div class="check">
-								    <input class="input" value="Notebook" type="checkbox" id="Notebook"/>
+								    <input class="input" value="Notebook" name="Notebook+" type="checkbox" id="Notebook"/>
 								    <label for="Notebook">
 								      <div><i class="fa fa-check"></i></div> Notebook
 								    </label>
@@ -524,19 +524,19 @@
 						<div class="col-half">
 				            <div class="input-group">
 				              	<div class="check">
-								    <input class="input" value="Tablet" type="checkbox" id="Tablet"/>
+								    <input class="input" value="Tablet" name="Tablet+" type="checkbox" id="Tablet"/>
 								    <label for="Tablet">
 								      <div><i class="fa fa-check"></i></div> Tablet
 								    </label>
 								</div>
 								<div class="check">
-								    <input class="input" value="Kindle" type="checkbox" id="Kindle"/>
+								    <input class="input" value="Kindle" name="Kindle+" type="checkbox" id="Kindle"/>
 								    <label for="Kindle">
 								      <div><i class="fa fa-check"></i></div> Kindle (Leitor)
 								    </label>
 								</div>
 								<div class="check">
-								    <input class="input" value="Game" type="checkbox" id="Game"/>
+								    <input class="input" value="Game" name="Game+" type="checkbox" id="Game"/>
 								    <label for="Game">
 								      <div><i class="fa fa-check"></i></div> Game portátil
 								    </label>
@@ -549,19 +549,19 @@
 						<div class="col-half">
 				            <div class="input-group">
 				              	<div class="check radio">
-								    <input class="input" value="Smartphone" type="radio" name="eletronic" id="Smartphone2"/>
+								    <input class="input" value="Smartphone" name="Smartphone" type="radio" name="eletronic" id="Smartphone2"/>
 								    <label for="Smartphone2">
 								      <div><i class="fa fa-times"></i></div> Smartphone
 								    </label>
 								</div>
 								<div class="check radio">
-								    <input class="input" value="PC" type="radio" name="eletronic" id="PC2"/>
+								    <input class="input" value="PC" name="PC" type="radio" name="eletronic" id="PC2"/>
 								    <label for="PC2">
 								      <div><i class="fa fa-times"></i></div> PC (Desktop)
 								    </label>
 								</div>
 								<div class="check radio">
-								    <input class="input" value="Notebook" type="radio" name="eletronic" id="Notebook2"/>
+								    <input class="input" value="Notebook" name="Notebook" type="radio" name="eletronic" id="Notebook2"/>
 								    <label for="Notebook2">
 								      <div><i class="fa fa-times"></i></div> Notebook
 								    </label>
@@ -571,19 +571,19 @@
 						<div class="col-half">
 				            <div class="input-group">
 				              	<div class="check radio">
-								    <input class="input" value="Tablet" type="radio" name="eletronic" id="Tablet2"/>
+								    <input class="input" value="Tablet" name="Tablet" type="radio" name="eletronic" id="Tablet2"/>
 								    <label for="Tablet2">
 								      <div><i class="fa fa-times"></i></div> Tablet
 								    </label>
 								</div>
 								<div class="check radio">
-								    <input class="input" value="Kindle" type="radio" name="eletronic" id="Kindle2"/>
+								    <input class="input" value="Kindle" name="Kindle" type="radio" name="eletronic" id="Kindle2"/>
 								    <label for="Kindle2">
 								      <div><i class="fa fa-times"></i></div> Kindle (Leitor)
 								    </label>
 								</div>
 								<div class="check radio">
-								    <input class="input" value="Game" type="radio" name="eletronic" id="Game2"/>
+								    <input class="input" value="Game" name="Game" type="radio" name="eletronic" id="Game2"/>
 								    <label for="Game2">
 								      <div><i class="fa fa-times"></i></div> Game portátil
 								    </label>
