@@ -1,0 +1,375 @@
+/************* Rows *************/
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+/************* Collums *************/
+.col-half {
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
+  width: 50%;
+}
+.col-half:last-of-type {
+  padding-right: 0;
+}
+.col-third {
+  float: left;
+  padding-right: 10px;
+  width: 33.33333333%;
+}
+.col-third:last-of-type {
+  padding-right: 0;
+}
+
+/************* Tooltip *************/
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+.tooltip ~ .tooltiptext {
+  background-color: rgba(249, 249, 249, 0.83);
+  border-radius: 3px;
+  border: 1px solid #AA1801;
+  color: #AA1801;
+  font-size: 12px;
+  left: 104%;
+  line-height: 1.5em;
+  padding: 5px 0;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  visibility: hidden;
+  width: 60%;
+  z-index: 1;
+}
+.tooltip ~ .tooltiptext::after {
+  border-color: transparent #aa1801 transparent transparent;
+  border-style: solid;
+  border-width: 6px;
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 35%;
+}
+.homepage .tooltip:focus ~ .tooltiptext {
+  visibility: visible;
+}
+
+/************* Input Group *************/
+.input-group {
+  margin-bottom: 1em;
+  zoom: 1;
+}
+.input-group:before,
+.input-group:after {
+  content: "";
+  display: table;
+}
+.input-group:after {
+  clear: both;
+}
+
+/************* Input Group Icon *************/
+.input-group-icon {
+  position: relative;
+}
+.input-group-icon .input-icon {
+  height: 3.4em;
+  left: 0;
+  line-height: 3.4em;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 3.4em;
+}
+.input-group-icon .input-icon:after {
+  border-right: 1px solid #e5e5e5;
+  bottom: 0.6em;
+  content: "";
+  display: block;
+  left: 3.4em;
+  position: absolute;
+  top: 0.6em;
+}
+.input:focus + .input-icon i {
+  color: #C4170C;
+}
+.input:focus + .input-icon:after {
+  border-right-color: #C4170C;
+}
+
+/************* Input General *************/
+.homepage input,
+.homepage input[type="radio"] + .homepage label,
+.homepage input[type="checkbox"] + .homepage label:before,
+.homepage select option,
+.homepage select {
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  line-height: 1.4;
+  padding: 1em;
+  padding-left: 5em;
+  width: 100%;
+}
+.homepage input:focus,
+.homepage input[type="radio"]:checked + .homepage label,
+.homepage input:checked + .homepage label:before,
+.homepage select:focus,
+.homepage select:active {
+  border-color: #C4170C;
+  outline: 0;
+}
+
+/************* Input Radio *************/
+.homepage input[type="radio"] {
+}
+.homepage input[type="radio"] + .homepage label {
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.homepage input[type="radio"] + .homepage label:first-of-type {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.homepage input[type="radio"] + .homepage label:last-of-type {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.homepage input[type="radio"] + .homepage label i {
+  padding-right: 0.4em;
+}
+
+/************* Input Checkbox *************/
+
+.check input { 
+  display:none;
+}
+
+.check label div{
+  width:23px;
+  height:23px;
+  display:inline-block;
+  border: 1px solid #e5e5e5;
+  text-align:center;
+  line-height:20px;
+  margin-right:6px; 
+  border-radius:3px;
+  cursor:pointer;
+  background:#f9f9f9;
+}
+
+.radio label div {
+  border-radius: 100%;
+}
+
+.check label i { 
+  font-size:16px;  
+  opacity:0; 
+}
+.check label:hover div { 
+  background:#c4170c;
+  outline:none;
+}
+.check input:checked + label i { 
+  opacity:1;
+  color: #fff;
+}
+.check input:checked + label div { 
+  background:#c4170c; 
+}
+
+/************* Input Date *************/
+.input-group input[type=date] {
+  color: #959595;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  height: 48px;
+  padding-left: 4.8em;
+  text-transform: uppercase;
+  width: 100%;
+}
+.input-group input[type=date]::-webkit-clear-button {
+  font-size: 18px;
+  height: 30px;
+  margin-right: 4px;
+  position: relative;
+  right: 5px;
+}
+.input-group input[type=date]::-webkit-inner-spin-button {
+  height: 30px;
+}
+.input-group input[type=date]::-webkit-calendar-picker-indicator {
+  background: none;
+  color: #C4170C;
+  font-size: 18px;
+}
+
+/************* Input Color *************/
+.homepage input[type="color"] {
+  height:47px;
+}
+
+/************* Select *************/
+.homepage select {
+  color: #959595;
+  font-size: 12px;
+  height: 48px;
+  padding-left: 4.8em;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.homepage select:first-of-type {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.homepage select:last-of-type {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.homepage select option {
+  font-size: 14px;
+}
+
+/************* Fieldset *************/
+
+.homepage .field {
+  padding: 1em 2em;
+  border-radius: 3px;
+  border: 2px solid #e5e5e5;
+  position: relative;
+}
+.homepage .field legend {
+  padding: 0 0.5em 0;
+}
+.field .row {
+  width: 350px;
+  margin: auto;
+  padding: 3px;
+}
+.homepage .field h4, .homepage .field #range {
+  float: left;
+  text-align: center;
+  margin: 0;
+}
+.homepage .field h4 {
+  width: 100px;
+}
+.homepage .field #range {
+}
+
+/************* Input Range *************/
+.homepage input[type="range"]{
+  -webkit-appearance:none;
+  width:230px;
+  height:20px;
+  background-color: #eee;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  overflow:hidden;
+  outline: none;
+  padding:0;
+}
+
+.homepage input[type="range"]:first-of-type{
+}
+
+.homepage input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:10px;
+  height:20px;
+  background:#aaa;
+  position:relative;
+  z-index:3;
+}
+
+.homepage input[type="range"]::-webkit-slider-thumb:after{
+  content:" ";
+  width:220px;
+  height:30px;
+  position:absolute;
+  z-index:1;
+  right:10px;
+  background:
+    -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+    -webkit-linear-gradient(left, #C4170C, #C4170C),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2));
+  background-size: 35px 22px, 100% 100%, 100% 100%;
+}
+
+/************* Progress Paginator *************/
+.homepage #paginator {
+  margin: 20px auto;
+  width: 325px;
+  position: relative;
+  text-align: center;
+}
+#paginator progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 240px;
+}
+#paginator progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+#paginator progress::-webkit-progress-value {
+  background:
+    -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+    -webkit-linear-gradient(left, #C4170C, #C4170C),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2));
+  background-size: 35px 22px, 100% 100%, 100% 100%;
+  border-radius: 50px;
+}
+#paginator a{
+  position: absolute;
+  top: -8px;
+  color: #e5e5e5;
+}
+#paginator a:visited{
+  color: #7E0E08;
+}
+#paginator a:hover{
+  color: #FF1C10;
+}
+#paginator a i {
+  font-size: 35px;
+}
+#paginator #back {
+  left: 0;
+}
+#paginator #forward {
+  right: 0;
+}
+
+/************* Submit Buttom *************/
+#submit{
+  background-color: #AA1801;
+  border-radius: 3px;
+  border: 1px solid #AA1801;
+  color: #f9f9f9;
+  display: block;
+  font-size: 13px;
+  height: 35px;
+  margin: 0 auto;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+}
+#submit:hover{
+  border: 1px solid #e82204;
+  background-color: #e82204;
+  outline: none;
+}

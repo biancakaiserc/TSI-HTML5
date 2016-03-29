@@ -1,0 +1,203 @@
+/****Menu*****/
+
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+/* Starter CSS for Menu */
+#cssmenu ul,
+#cssmenu li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#cssmenu ul {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#cssmenu ul li {
+  float: left;
+  min-height: 1px;
+  vertical-align: middle;
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-transform: none;
+  min-width: 120px;
+}
+#cssmenu ul ul li {
+  float: none;
+}
+#cssmenu ul ul ul {
+  top: 0;
+  left: 150px;
+  width: 150px;
+}
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+#cssmenu ul ul {
+  bottom: 0;
+  left: 0;
+}
+#cssmenu ul ul {
+  margin-top: 0;
+}
+#cssmenu ul ul li {
+  font-weight: normal;
+  position: relative;
+}
+#cssmenu a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+  color: #cbcbcb;
+  padding: 0 20px;
+}
+
+/* Custom CSS Styles */
+#cssmenu:after,
+#cssmenu ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#cssmenu ul ul a {
+  background: #aa1801;
+  color: #ffffff;
+  border-top: 0 none;
+  line-height: 50%;
+  padding: 16px 20px;
+}
+#cssmenu ul ul li:first-child > a {
+  border-top: 1px solid #771101;
+}
+#cssmenu ul ul li:hover > a {
+  background: #dd1f01;
+  color: #ffffff;
+}
+#cssmenu ul ul li:last-child > a {
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -moz-box-shadow: 0 1px 0 #aa1801;
+  -webkit-box-shadow: 0 1px 0 #aa1801;
+  box-shadow: 0 1px 0 #aa1801;
+}
+#cssmenu ul ul li:last-child:hover > a {
+  -moz-border-radius: 0 0 0 3px;
+  -webkit-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#cssmenu ul li:hover > a,
+#cssmenu ul li.active > a {
+  background: #991601;
+  color: #ffffff;
+}
+#cssmenu ul li.last ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu ul li.last ul ul {
+  left: auto;
+  right: 99.5%;
+}
+#cssmenu > ul > li > a {
+  line-height: 48px;
+}
+#cssmenu.align-center > ul {
+  text-align: center;
+  font-size: 0;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-center ul ul {
+  text-align: center;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right ul ul {
+  left: auto;
+  right: 0;
+  text-align: center;
+}
+#cssmenu.align-right ul ul ul {
+  left: auto;
+  right: 120px;
+}
+
+/* --------------------Header--------------------*/
+
+#menu{
+  position: absolute;
+  z-index: 599;
+}
+
+.nav {
+  background-color: #AA1801;
+  color: white;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+#banner{
+  background-color: white;
+  text-align: center;
+}
+
+#banner img {
+  width: 70px;
+  position: absolute;
+  left: 40px;
+}
+
+.searchBar{
+  box-shadow: 0 1px rgba(255,255,255,0.09),0 1px rgba(0,0,0,0.2) inset;
+  background-color: #911402;
+  border-radius: 18px;
+  position: relative;
+  width: 230px;
+  top: 9px;
+  left: 189px;
+}
+
+.searchBar input, .searchBar button{
+  border: none;
+  font-size: 16px;
+  background: none;
+  color: #D9D9D9;
+}
+
+.searchBar input{
+  height: 30px;
+  margin-left: 15px;
+}
+
+.searchButton{
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}
+
+.searchBar input:focus, .searchBar button:focus {
+  outline: none;
+  color: white;
+}
